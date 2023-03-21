@@ -1,0 +1,104 @@
+.navbar-brand {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: calc(var(--font-medium)*1.82);
+    letter-spacing: 0.04em;
+    color: #000000;
+
+    margin-top: -8px;
+}
+
+.nav-link {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--font-medium);
+    color: #68707D;
+}
+
+.navbar-header {
+    float: left;
+}
+
+.navbar-nav {
+    margin-left: 1rem;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+nav a.active {
+    position: relative;
+    color: #1D2025;
+}
+
+nav a.active::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #FF7D1A;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    cursor: pointer;
+}
+
+.container-fluid {
+    border-bottom: 2px solid #F7F8FD;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        border-bottom: 0px solid #F7F8FD;
+    }
+
+    .navbar-nav {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        margin-top: 0px;
+    }
+
+    nav a.active::after {
+        background-color: transparent;
+    }
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: var(--font-medium);
+    line-height: 14px;
+    color: #1D2025;
+}
+
+.modal-body {
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: var(--font-medium);
+    line-height: 11px;
+    letter-spacing: 0.04em;
+    color: #68707D;
+}
