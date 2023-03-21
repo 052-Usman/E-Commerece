@@ -102,3 +102,10 @@ nav a.active::after {
     letter-spacing: 0.04em;
     color: #68707D;
 }
+
+
+@media (max-width: 600px) {
+    .offcanvas{
+        width: 56%;
+    }
+}
